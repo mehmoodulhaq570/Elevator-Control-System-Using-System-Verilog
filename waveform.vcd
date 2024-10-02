@@ -1,0 +1,447 @@
+$date
+	Wed Oct  2 03:36:29 2024
+$end
+$version
+	QuestaSim Version 2023.1
+$end
+$timescale
+	1ns
+$end
+
+$scope module Lift8_Tb $end
+$var reg 2 ! Down [1:0] $end
+$var reg 2 " Up [1:0] $end
+$var reg 1 # clk $end
+$var reg 3 $ current_floor [2:0] $end
+$var reg 2 % door [1:0] $end
+$var reg 1 & emergency_stop $end
+$var reg 2 ' idle [1:0] $end
+$var reg 3 ( max_request [2:0] $end
+$var reg 3 ) min_request [2:0] $end
+$var reg 3 * req_floor [2:0] $end
+$var reg 8 + requests [7:0] $end
+$var reg 1 , reset $end
+
+$scope module dut $end
+$var wire 1 - clk $end
+$var wire 1 . emergency_stop $end
+$var wire 1 / reset $end
+$var reg 2 0 Down [1:0] $end
+$var reg 2 1 Up [1:0] $end
+$var reg 3 2 current_floor [2:0] $end
+$var reg 2 3 door [1:0] $end
+$var reg 1 4 door_timer $end
+$var reg 1 5 emergency_stopped $end
+$var reg 1 6 flag $end
+$var reg 2 7 idle [1:0] $end
+$var reg 3 8 max_request [2:0] $end
+$var reg 3 9 min_request [2:0] $end
+$var reg 3 : req_floor [2:0] $end
+$var reg 8 ; requests [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0.
+1/
+0-
+bx !
+bx "
+0#
+bx $
+bx %
+0&
+bx '
+bx (
+bx )
+bx *
+bx +
+1,
+bx 0
+bx 1
+bx 2
+bx 3
+x4
+x5
+06
+bx 7
+bx 8
+bx 9
+bx :
+bx ;
+$end
+#5
+1#
+1-
+b0 2
+b0 7
+b0 3
+b1 1
+b0 0
+b0 8
+b111 9
+b0 ;
+05
+b0 +
+b111 )
+b0 (
+b0 !
+b1 "
+b0 %
+b0 '
+b0 $
+#10
+0,
+b1 *
+0#
+b1 :
+0/
+0-
+b10 ;
+b1 8
+b1 9
+b1 )
+b1 (
+b10 +
+#15
+1#
+1-
+b1 2
+b1 $
+b1 7
+b1 3
+b0 ;
+14
+b0 +
+b1 %
+b1 '
+#20
+0#
+0-
+#25
+1#
+1-
+b0 3
+b0 %
+#30
+0#
+0-
+#35
+1#
+1-
+#40
+b100 *
+0#
+b100 :
+0-
+b10000 ;
+b100 8
+b100 (
+b10000 +
+#45
+1#
+1-
+b10 2
+b0 7
+b0 '
+b10 $
+#50
+b11 *
+0#
+b11 :
+0-
+b11000 ;
+b11000 +
+#55
+1#
+1-
+b11 2
+b11 $
+b1 7
+b1 3
+b10000 ;
+b10000 +
+b1 %
+b1 '
+#60
+0#
+0-
+#65
+1#
+1-
+b0 3
+b100 2
+b0 7
+b0 '
+b100 $
+b0 %
+b1 7
+b1 3
+b0 ;
+b0 +
+b1 %
+b1 '
+#70
+b111 *
+0#
+b111 :
+0-
+b10000000 ;
+b111 8
+b111 (
+b10000000 +
+#75
+1#
+1-
+b0 3
+b101 2
+b0 7
+b0 '
+b101 $
+b0 %
+#80
+0#
+0-
+#85
+1#
+1-
+b110 2
+b110 $
+#90
+1&
+0#
+1.
+0-
+#95
+1#
+1-
+b1 7
+16
+15
+b1 '
+#100
+0#
+0-
+#105
+1#
+1-
+#110
+0&
+0#
+0.
+0-
+#115
+1#
+1-
+05
+06
+#120
+b10 *
+0#
+b10 :
+0-
+b10000100 ;
+b10 9
+b10 )
+b10000100 +
+#125
+1#
+1-
+b111 2
+b0 7
+b0 '
+b111 $
+b1 7
+b1 3
+b100 ;
+b100 +
+b1 %
+b1 '
+#130
+0#
+0-
+#135
+1#
+1-
+b0 3
+b0 1
+b1 0
+b1 !
+b0 "
+b0 %
+#140
+0#
+0-
+#145
+1#
+1-
+b110 2
+b0 7
+b0 '
+b110 $
+#150
+0#
+0-
+#155
+1#
+1-
+b101 2
+b101 $
+#160
+b110 *
+0#
+b110 :
+0-
+b1000100 ;
+b110 8
+b110 (
+b1000100 +
+#165
+1#
+1-
+b100 2
+b100 $
+#170
+0#
+0-
+#175
+1#
+1-
+b11 2
+b11 $
+#180
+0#
+0-
+#185
+1#
+1-
+b10 2
+b10 $
+b1 7
+b1 3
+b1000000 ;
+b1000000 +
+b1 %
+b1 '
+#190
+0#
+0-
+#195
+1#
+1-
+b0 3
+b1 1
+b0 0
+b0 !
+b1 "
+b0 %
+#200
+b1 *
+0#
+b1 :
+0-
+b1000010 ;
+b1 9
+b1 )
+b1000010 +
+#205
+1#
+1-
+b11 2
+b0 7
+b0 '
+b11 $
+#210
+0#
+0-
+#215
+1#
+1-
+b100 2
+b100 $
+#220
+0#
+0-
+#225
+1#
+1-
+b101 2
+b101 $
+#230
+0#
+0-
+#235
+1#
+1-
+b110 2
+b110 $
+b1 7
+b1 3
+b10 ;
+b10 +
+b1 %
+b1 '
+#240
+0#
+0-
+#245
+1#
+1-
+b0 3
+b0 1
+b1 0
+b1 !
+b0 "
+b0 %
+#250
+0#
+0-
+#255
+1#
+1-
+b101 2
+b0 7
+b0 '
+b101 $
+#260
+0#
+0-
+#265
+1#
+1-
+b100 2
+b100 $
+#270
+0#
+0-
+#275
+1#
+1-
+b11 2
+b11 $
+#280
+0#
+0-
+#285
+1#
+1-
+b10 2
+b10 $
+#290
+0#
+0-
+#295
+1#
+1-
+b1 2
+b1 $
+b1 7
+b1 3
+b0 ;
+b0 +
+b1 %
+b1 '
+#300
+0#
+0-
